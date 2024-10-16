@@ -1,0 +1,91 @@
+/* Navbar Styling */
+nav a {
+    font-weight: 400; /* Normal weight by default */
+    transition: font-weight 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    font-weight: 700; /* Bold on hover */
+    color: #000; /* Change to black color */
+}
+
+/* Button Styling */
+button {
+    background-color: #1f2937; /* Dark gray */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #1184e2; /* Change to a new color (e.g., blue) on hover */
+    color: #fff; /* Keep text white */
+}
+
+/* Custom styles for hover and scroll behavior */
+.feature-card {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .feature-card:hover {
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .feature-details {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .feature-card:hover .feature-details {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  .feature-list {
+    height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: gray lightgray;
+  }
+
+  .feature-list::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .feature-list::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+  }
+
+/* Slow scroll animation for reviews */
+.scroll-reviews {
+    max-height: 300px; /* Set max height for review section */
+    overflow-y: auto; /* Allow vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+.scroll-reviews::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Auto-scroll effect */
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.scrolling-content {
+    animation: scroll 20s linear infinite; /* Adjust scroll duration here */
+}

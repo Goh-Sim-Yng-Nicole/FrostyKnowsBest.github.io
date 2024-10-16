@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Knows Best | Our Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-gray-800"></div>
+                    <span class="font-bold text-lg">
+                        Team 3
+                    </span>
+                </a>
+            </div>
+            <!-- Navigation Bar -->
+            <nav class="space-x-8">
+                <a class="text-gray-800" href="index.html"> Home </a>
+                <a class="text-gray-600" href="features.html"> Features </a>
+                <a class="text-gray-600 font-bold" href="product.html"> Our Product </a>
+                <a class="text-gray-600" href="order.html"> Order Now </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- Product Demo Video -->
+        <section class="mb-16">
+            <h1 class="text-4xl font-bold text-center mb-8">Product Demonstration</h1>
+            <div class="flex justify-center">
+                <video id="m1Vid" width="800" autoplay controls>
+                    <source src="../Assets/Videos/IS114_Group03_Mission01_Video.mp4" type="video/mp4">
+                </video>
+		<script>
+			var video = document.getElementById("m1Vid");
+			video.volume = 0.5;
+		</script>
+            </div>
+        </section>
+
+        <!-- Customers' Reviews Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-12">Customers’ Reviews</h2>
+
+            <!-- Scrollable Reviews Container -->
+            <div class="scroll-reviews">
+                <div class="scrolling-content space-y-8">
+
+                    <!-- First Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Alice M.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"I love how this product integrates multiple sensors. The temperature and light sensors work perfectly to notify me if something's wrong with the fridge. It’s well-designed and smartly utilises MicroBits and radio communication."</p>
+                    </div>
+
+                    <!-- Second Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">David S.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"As someone who spends a lot of time in the kitchen, I can’t tell you how many times I’ve accidentally left the fridge door slightly open. Frosty Knows Best has stopped that from happening! My only suggestion would be a louder alert option."</p>
+                    </div>
+
+                    <!-- Third Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Emily R.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"Frosty Knows Best is a game-changer for my busy household. I love the automatic alerts when the fridge door is left open. It’s incredibly easy to use, and the Microbit integration is impressive!"</p>
+                    </div>
+
+                    <!-- Fourth Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Michael L.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"This product has been a great addition to my smart kitchen setup. The only thing I would improve is the range of the radio communication – sometimes I need to reset it, but overall, it’s been very reliable."</p>
+                    </div>
+
+                    <!-- Fifth Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Sophia T.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"I love the fact that this product is designed with ease of use in mind. It helps me manage the fridge much better, and the notifications are clear and timely. Would definitely recommend this to anyone!"</p>
+                    </div>
+
+                    <!-- Sixth Review -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Liam H.</h3>
+                                <div class="flex">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-gray-300"></i>
+                                    <i class="fas fa-star text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"It’s a handy device but takes a bit of time to get used to. The temperature and light sensors work great, but I had some trouble with the alert volume. Once I got the hang of it, it made life easier."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Designed By Section -->
+        <section class="text-center">
+            <h3 class="text-3xl font-bold mb-4">Designed by Team 3</h3>
+            <div>
+                <p class="text-gray-600 mb-4">We are a team of passionate developers and designers focused on building smart, connected devices for the home. Our product, Frosty Knows Best, is designed to help you monitor and maintain your refrigerator effortlessly.</p>
+            </div>
+
+            <!-- Designers' Profiles -->
+            <div class="flex justify-center space-x-8 mb-4">
+                <!-- Designer 1 -->
+                <div class="text-center">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-2" src="../Assets/Images/Product_Kelsey.jpg" alt="Kelsey La">
+                    <p class="font-semibold">Kelsey La</p>
+                </div>
+                <!-- Designer 2 -->
+                <div class="text-center">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-2" src="../Assets/Images/Product_Nicole.jpg" alt="Nicole Goh">
+                    <p class="font-semibold">Nicole Goh</p>
+                </div>
+                <!-- Designer 3 -->
+                <div class="text-center">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-2" src="../Assets/Images/Product_Samaira.jpg" alt="Samaira Agrawal">
+                    <p class="font-semibold">Samaira Agrawal</p>
+                </div>
+                <!-- Designer 3 -->
+                <div class="text-center">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-2" src="../Assets/Images/Product_Williams.jpg" alt="Williams Smith">
+                    <p class="font-semibold">Williams Smith</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

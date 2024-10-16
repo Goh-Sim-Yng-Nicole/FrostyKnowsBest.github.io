@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Frosty Knows Best | Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100 font-roboto">
+        <!-- Header -->
+        <header class="bg-white shadow-sm">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-4 h-4 bg-gray-800"></div>
+                        <span class="font-bold text-lg">
+                            Team 3
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation Bar -->
+                <nav class="space-x-8">
+                    <a class="text-gray-800 font-bold" href="index.html"> Home </a>
+                    <a class="text-gray-600" href="features.html"> Features </a>
+                    <a class="text-gray-600" href="product.html"> Our Product </a>
+                    <a class="text-gray-600" href="order.html"> Order Now </a>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="container mx-auto px-4 py-16 flex items-center">
+            <div class="w-1/2">
+                <h1 class="text-5xl font-bold text-gray-900">
+                    Frosty Knows Best
+                </h1>
+                <p class="mt-4 text-gray-600">
+                    Stay frosty, stay informed—Frosty knows best! 
+                    Innovative solution to remind you to stay chill and save the environment.
+                </p>
+                <button class="mt-8 px-6 py-3 bg-gray-800 text-white font-bold" onclick="window.location.href='order.html'">
+                    Order Now
+                </button>
+            </div>
+            <div class="w-1/2 flex justify-center">
+                <img alt="Home Page Main Product Image" height="700" src="../Assets/Images/Home_main_image.jpg" width="700"/>
+            </div>
+        </main>
+    </body>
+</html>

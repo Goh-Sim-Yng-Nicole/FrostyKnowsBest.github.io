@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Knows Best | Features</title>
+    <!-- Tailwind CSS and external stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-gray-800"></div>
+                    <span class="font-bold text-lg">Team 3</span>
+                </a>
+            </div>
+            <!-- Navigation Bar -->
+            <nav class="space-x-8">
+                <a class="text-gray-800" href="index.html"> Home </a>
+                <a class="text-gray-600 font-bold" href="features.html"> Features </a>
+                <a class="text-gray-600" href="product.html"> Our Product </a>
+                <a class="text-gray-600" href="order.html"> Order Now </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Product Overview Section -->
+        <section class="flex flex-col md:flex-row mb-12">
+            <div class="md:w-1/2 mb-6 md:mb-0 p-2">
+                <h2 class="text-4xl font-bold mb-4">Product Overview</h2>
+                <p>
+                    <strong>Frosty Knows Best</strong> is a smart, energy-saving device powered by microbits, designed to remind users to close their fridge door. 
+                    It monitors fridge conditions and sends timely alerts to prevent energy wastage, keeping your food fresh and reducing power consumption effortlessly.
+                </p>
+                <p class="mt-4">
+                    This smart device, powered by a series of microbits, monitors the state of your refrigerator in real time, 
+                    guaranteeing that the door is always closed properly. 
+                    Frosty Knows Best uses smart sensors to determine whether the refrigerator door is left open or not fully closed. 
+                    It promptly sends you a sound signal, reminding you to close the door before chilly air escapes. 
+                    Not only does this save energy, but it also contributes to proper food storage conditions, extending the life of your foods.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="../Assets/Images/Features_product_overview.jpg" alt="Product Overview Image" class="w-full h-75 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <h1 class="text-4xl font-bold text-center mb-12">Key Features</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 row-gap-1 feature-list">
+            <!-- Key Features Cards -->
+            <div class="bg-white p-4 rounded-lg shadow feature-card">
+                <img src="../Assets/Images/Features_KeyFeature1.jpg" alt="Microcontroller with red LED lights" class="w-full h-52 object-cover rounded-lg mb-4">
+                <p class="text-center font-bold">Real-time Monitoring</p>
+                <div class="feature-details text-center">
+                    <p>Sensors detect temperature, light, and door position to ensure your fridge is closed properly.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow feature-card">
+                <img src="../Assets/Images/Features_KeyFeature2.jpg" alt="Microcontroller with yellow LED lights" class="w-full h-52 object-cover rounded-lg mb-4">
+                <p class="text-center font-bold">Energy Saving Alerts</p>
+                <div class="feature-details text-center">
+                    <p>Audible reminders and visual cues help reduce power consumption by preventing the fridge from staying open.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow feature-card">
+                <img src="../Assets/Images/Features_KeyFeature3.jpg" alt="Microcontroller with blue LED lights" class="w-full h-52 object-cover rounded-lg mb-4">
+                <p class="text-center font-bold">User-Friendly Display</p>
+                <div class="feature-details text-center">
+                    <p>Easy-to-read notifications displayed on the microbit interface, providing peace of mind.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow feature-card">
+                <img src="../Assets/Images/Features_KeyFeature4.jpg" alt="Microcontroller with red LED lights" class="w-full h-52 object-cover rounded-lg mb-4">
+                <p class="text-center font-bold">Compact Design</p>
+                <div class="feature-details text-center">
+                    <p>Fits seamlessly into any fridge without taking up much space.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <section class="mt-12">
+            <h2 class="text-4xl font-bold mb-4">Benefits</h2>
+            <ul class="list-disc list-inside">
+                <li>Helps save on energy costs by reducing unnecessary power consumption.</li>
+                <li>Prevents food spoilage by maintaining the correct fridge temperature.</li>
+                <li>Convenient, automated system that requires no additional effort from the user.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
